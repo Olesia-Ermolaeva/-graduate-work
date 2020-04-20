@@ -1,0 +1,29 @@
+{
+  "name": "-graduate-work",
+  "version": "1.0.0",
+  "description": "graduate work for GLO-academy",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olesia-Ermolaeva/-graduate-work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olesia-Ermolaeva/-graduate-work/issues"
+  },
+  "homepage": "https://github.com/Olesia-Ermolaeva/-graduate-work#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-minify": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-tinypng-compress": "^1.2.5"
+  }
+}
