@@ -1,23 +1,42 @@
+@media screen and ( max-width: 1870px )
+  .container
+    width: 87%
+    margin: auto
 @media screen and ( max-width: 1450px )
-  body
-    font-family: 'Ubuntu', sans-serif
-    font-size: 1rem
+  header
+    padding: 1.85rem 2rem
+  .nav
+    margin-left: 2rem
 @media screen and ( max-width: 1250px )
-  body
-    font-family: 'Ubuntu', sans-serif
-    font-size: 1rem
+  html
+    font-size: 12px
+  .nav
+    &__item
+      margin-right: 1rem
 @media screen and ( max-width: 994px )
-  body
-    font-family: 'Ubuntu', sans-serif
-    font-size: 1rem
+  .nav
+    display: none
+  .social
+    display: none
+  .col
+    &-50
+      width: 100%
+      flex-basis: 100%
+  .hero
+    background: $light
+    &__content
+      margin-top: 0
+      margin: auto
+    &__photo
+      display: none
 @media screen and ( max-width: 760px )
   body
     font-family: 'Ubuntu', sans-serif
     font-size: 1rem
 @media screen and ( max-width: 570px )
-  body
-    font-family: 'Ubuntu', sans-serif
-    font-size: 1rem
+  .contacts
+    &__button
+      display: none
 @media screen and ( max-height: 520px )
   body
     font-family: 'Ubuntu', sans-serif
