@@ -1,8 +1,17 @@
 @media screen and ( max-width: 1870px )
   .container
-    width: 87%
-    margin: auto
+    width: 80%
+@media screen and ( max-width: 1600px )
+  .container
+    width: 90%
+  .video
+    &__play
+      position: absolute
+      margin-top: 20%
+      margin-left: 46%
 @media screen and ( max-width: 1450px )
+  html
+    font-size: 14px
   header
     padding: 1.85rem 2rem
   .nav
@@ -22,21 +31,44 @@
     &-50
       width: 100%
       flex-basis: 100%
+  header
+    background: $light
   .hero
     background: $light
+    padding-bottom: 20rem
     &__content
       margin-top: 0
       margin: auto
     &__photo
       display: none
+  .video
+    &__play
+      position: absolute
+      margin-top: 25%
+      margin-left: 43%
 @media screen and ( max-width: 760px )
-  body
-    font-family: 'Ubuntu', sans-serif
-    font-size: 1rem
+  .container
+    width: 95%
+  .hero
+    background: $light
+    padding-bottom: 5rem
+  .statistics
+    &__description
+      display: none
+  .video
+    &__play
+      position: absolute
+      margin-top: 25%
+      margin-left: 43%
 @media screen and ( max-width: 570px )
   .contacts
     &__button
       display: none
+  .video
+    &__play
+      position: absolute
+      margin-top: 30%
+      margin-left: 41%
 @media screen and ( max-height: 520px )
   body
     font-family: 'Ubuntu', sans-serif

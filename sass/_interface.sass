@@ -1,7 +1,6 @@
 .button
   font-family: 'ubuntu', sans-serif
   box-sizing: border-box
-  border: none
   box-shadow: none
   outline: none
   padding: 0.218rem 2.062rem
@@ -11,10 +10,14 @@
   &--primary
     color: $light
     background-color: $primary
+    border: 2px solid $primary
     box-shadow: none
     font-weight: 500
     line-height: 37.33px
+    transition: 0.5s
     &:hover
-      box-shadow: 0px 5px 15px rgba($primary, 0.2)
+      border: 2px solid $primary
+      background: $light
+      color: $primary
       
       

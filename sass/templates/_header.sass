@@ -26,6 +26,9 @@ header
       &:hover
         color: $primary
 .nav
+  display: flex
+  justify-content: space-around
+  align-items: center
   margin-left: 11.2rem
   &__item
     position: relative
@@ -46,6 +49,10 @@ header
         width: 80%
         height: 2px   
 .contacts
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: nowrap
   &__phone
     color: $secondary
     font-size: 1.125rem
@@ -55,4 +62,3 @@ header
     transition: 0.4s
     &:hover
       color: $primary
-  &__button
