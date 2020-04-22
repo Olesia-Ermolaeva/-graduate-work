@@ -1,0 +1,58 @@
+header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 99
+  background-color: transparent
+  padding: 1.85rem 5.5rem
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__logo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__text
+      color: $secondary
+      text-transform: uppercase
+      font-size: 1.625rem
+      font-weight: 700
+      letter-spacing: 1.7px
+      line-height: 1.187rem
+      margin-left: 0.812rem
+      transition: 0.4s
+      &:hover
+        color: $primary
+.nav
+  margin-left: 11.2rem
+  &__item
+    position: relative
+    color: $secondary
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 300
+    line-height: 1.8rem
+    margin-right: 1.25rem
+    &:hover
+      &::after
+        content: ''
+        position: absolute
+        top: 100%
+        left: 10%
+        margin-top: 0.5rem
+        background: $primary
+        width: 80%
+        height: 2px   
+.contacts
+  &__phone
+    color: $secondary
+    font-size: 1.125rem
+    font-weight: 600
+    line-height: 2.33rem
+    margin-right: 2.8rem
+    transition: 0.4s
+    &:hover
+      color: $primary
+  &__button
