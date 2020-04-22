@@ -432,13 +432,13 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: #fff url("../img/hero/hero_bg.png") no-repeat top left/cover;
+  background: #fff url("../img/hero/hero_bg.png") no-repeat top left/contain;
   width: 100%;
   height: 100vh;
   min-height: 52.31rem;
   color: #323232;
   padding-top: 6.562rem;
-  padding-bottom: 26.31rem; }
+  padding-bottom: 75rem; }
   .hero__content {
     max-width: 40rem;
     z-index: 3;
@@ -480,7 +480,8 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 3.8rem; }
+  margin-left: 3.8rem;
+  margin-bottom: 12rem; }
   .social::before {
     position: absolute;
     content: '';
@@ -496,6 +497,42 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 1.81rem; }
+
+.statistics {
+  position: relative;
+  width: 100%;
+  min-height: 39.56rem;
+  background: #fff url("/img/statistics/video-bg.jpg") no-repeat center/cover; }
+  .statistics__description {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 73.06rem;
+    min-height: 20.18rem;
+    background: #fff url("/img/statistics/bg.png") no-repeat center;
+    box-shadow: 0 0 22px 5px rgba(34, 34, 34, 0.05);
+    margin-top: -8rem; }
+  .statistics__item--title {
+    color: #ff5a3c;
+    font-size: 3.875rem;
+    font-weight: 700;
+    line-height: 5.195rem;
+    letter-spacing: -3.34px;
+    text-align: center; }
+  .statistics__item--text {
+    color: #2c2c2d;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 2.33rem;
+    text-align: center; }
+
+.video {
+  position: relative; }
+  .video__play {
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 46%; }
 
 .modal {
   opacity: 0;

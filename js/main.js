@@ -221,16 +221,18 @@ $(document).ready(function () {
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
   //видеоплеер
   var player;
+  var stastics = $('.statistics__description');
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '465',
+      height: '633px',
       width: '100%',
-      videoId: 'RHzzLqJWqHs',
+      videoId: '0uwmN9Bj3Ko',
       events: {
         'onReady': videoPlay,
-      }
+      },
     });
-  })
+    stastics.css('display', 'none');
+  });
 
   function videoPlay(event) {
     event.target.playVideo();
