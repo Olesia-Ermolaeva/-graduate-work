@@ -112,8 +112,8 @@ $(document).ready(function () {
       });
     }
   });
-
-  $("#footerForm").validate({
+// валидация формы с контактами
+  $(".feedback__form").validate({
     rules: {
       // строчное правило
       userName: {
@@ -121,17 +121,17 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
+      userEmail: {
+        required: true,
+        email: true
+      },
       userPhone: {
         required: true,
         minlength: 10
       },
-      userQuestion: {
+      userMessage: {
         required: true,
         minlength: 10
-      },
-      // валидация чекбокса
-      policyCheckbox: {
-        required: true
       }
     },
     errorElement: "ef",
@@ -143,16 +143,19 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не длиннее 15 букв" 
       }, 
+      userEmail: {
+        required: "E-mail обязателен",
+        email: "Введите верный e-mail" 
+      },
       userPhone: {
         required: "Телефон обязателен",
         minlength: "Введите телефон полностью" 
       },
-      userQuestion: {
-        required: "Хочешь спросить - спрашивай",
-        minlength: "Напиши больше" 
-      },
-      policyCheckbox: "Согласитесь с обработкой данных"
-    },
+      userMessage: {
+        required: "Напишите что-нибудь",
+        minlength: "Напишите больше"
+      }
+    },  
     submitHandler: function(form) {
       $.ajax({
         type: "POST",

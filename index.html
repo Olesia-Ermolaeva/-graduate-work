@@ -21,11 +21,11 @@
           <a href="#statistics" class="nav__item">Продвижение</a>
           <a href="#services" class="nav__item">Аудит</a>
           <a href="#prices" class="nav__item">Цены</a>
-          <a href="" class="nav__item">Контакты</a>
+          <a href="#feedback" class="nav__item">Контакты</a>
         </div>
         <!-- /.nav menu__nav -->
         <div class="contacts menu__contacts">
-          <a href="tel:+79997683299" class="phone contacts__phone">+7(812)-992-10-30</a>
+          <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
           <button class="button contacts__button button--primary"><a href="#prices" class="button__link">Заказать звонок</a></button>
 
         </div>
@@ -203,10 +203,10 @@
 
     </section>
     <!-- /.services -->
-    <section id=prices class="section prices">
+    <section class="section prices">
       <div class="container">
         <div class="prices__wrap">
-          <h2 class="prices__title">Узнать стоимость</h2>
+          <h2 id=prices class="prices__title">Узнать стоимость</h2>
           <form action="send.php" method="POST" class="form prices__form">
             <div class="input-group prices__input-group">
               <label for="prices-user-name" class="label form__label  prices__label">Имя</label>
@@ -233,6 +233,57 @@
       <!-- /.container -->
     </section>
     <!-- /.prices -->
+    <section id=feedback class="section feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <div class="feedback__title">Остались вопросы? <br> Напишите нам! <br> Отправте Ваше сообщение через форму или <a href="mailto:info@saytspb.ru" class="feedback__link">e-mail</a>.</div>
+            <div class="feedback__description">
+              <div class="feedback__description__item">
+                <strong class="feedback__strong">Адресс</strong>
+                <p>Город Санкт-Петербург</p>
+                <p>Улица Мурзинская дом 11</p> 
+                <p><a href="tel:+78129921030" class="feedback__description__link">+7(812)-992-10-30</a></p>  
+                <p><a href="mailto:info@saytspb.ru" class="feedback__description__link">info@saytspb.ru</a></p>
+              </div>
+              <div class="feedback__description__item">
+                <strong class="feedback__strong">Рабочие дни</strong>
+                <p>Понедельник-Пятница</p>
+                <strong class="feedback__strong">Выходные </strong>
+                <p>Суббота-Воскресенье</p>
+                <strong class="feedback__strong">09:00-18:00</strong>
+              </div>
+            </div>
+            <!-- /.feedback__description -->
+          </div>
+          <div class="col-50 col-50__primary">
+            <form action="send.php" method="POST" class="form feedback__form">
+              <div class="input-group feedback__input-group">
+                <label for="feedback-user-name" class="label form__label  feedback__label">Имя</label>
+                <input type="text" name="userName" class="input form__input feedback__input" id="feedback-user-name" placeholder="Иван Иванов">
+              </div>
+              <div class="input-group feedback__input-group">
+                <label for="feedback-user-email" class="label form__label  feedback__label">E-mail</label>
+                <input type="email" name="userEmail" class="input form__input feedback__input" id="feedback-user-email" placeholder="ivanov@gmail.com">
+              </div>
+              <div class="input-group feedback__input-group">
+                <label for="feedback-user-phone" class="label form__label  feedback__label">Телефон</label>
+                <input type="tel" name="userPhone" class="input form__input feedback__input" id="feedback-user-site" placeholder="+7 999 888-88-88">
+              </div>
+              <div class="input-group feedback__input-group">
+                <label for="feedback-user-message" class="label form__label  feedback__label">Сообщение</label>
+                <input type="text" name="userMessage" class="input form__input feedback__input" id="feedback-user-message" placeholder="Введите Ваше сообщение">
+              </div>
+              <button class="button feedback__form__button button--light">Отправить</button>
+            </form>
+            <!-- /.form prices__form -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section feedback -->
   </main>
   <footer>
     <div class="container">
