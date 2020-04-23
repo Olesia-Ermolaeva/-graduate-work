@@ -596,6 +596,54 @@ header {
     height: 40px;
     margin-bottom: 1rem; }
 
+.row__services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto; }
+
+.col-30__services {
+  flex-basis: 30%; }
+
+.services {
+  background: #fff url("../img/services/services-bg.png") no-repeat center;
+  padding-bottom: 14.43rem; }
+  .services__title {
+    margin-bottom: 1.68rem; }
+  .services__description {
+    max-width: 49rem;
+    text-align: center;
+    margin: auto;
+    color: #2c2c2d;
+    font-weight: 400;
+    line-height: 1.375rem;
+    margin-bottom: 3.56rem; }
+  .services__card {
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #c9c8c8;
+    width: 22.18rem;
+    height: 19.37rem;
+    padding: 36px 35px;
+    margin-bottom: 2.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .services__card:hover {
+      cursor: pointer;
+      border-bottom: 5px solid #ff5a3c; }
+    .services__card-title {
+      display: block;
+      color: #2c2c2d;
+      font-size: 1.625rem;
+      font-weight: 600;
+      line-height: 2.33rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem; }
+    .services__card-text {
+      font-weight: 300;
+      line-height: 1.583rem; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -742,13 +790,19 @@ header {
   header {
     padding: 1.85rem 2rem; }
   .nav {
-    margin-left: 2rem; } }
+    margin-left: 2rem; }
+  .services__card {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
 
 @media screen and (max-width: 1250px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .services__card {
+    width: 90%;
+    height: 25rem; } }
 
 @media screen and (max-width: 994px) {
   .nav {
@@ -756,6 +810,9 @@ header {
   .social {
     display: none; }
   .col-30 {
+    width: 100%;
+    flex-basis: 50%; }
+  .col-30__services {
     width: 100%;
     flex-basis: 50%; }
   header {
@@ -776,6 +833,15 @@ header {
 @media screen and (max-width: 760px) {
   .container {
     width: 95%; }
+  .row__services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto; }
+  .col-30__services {
+    width: 80%;
+    flex-basis: 90%; }
   .hero {
     background: #fff;
     padding-bottom: 5rem; }
@@ -784,7 +850,10 @@ header {
   .video__play {
     position: absolute;
     margin-top: 25%;
-    margin-left: 43%; } }
+    margin-left: 43%; }
+  .services__card {
+    margin-left: 0;
+    margin-right: 0; } }
 
 @media screen and (max-width: 570px) {
   .contacts__button {
@@ -792,7 +861,9 @@ header {
   .video__play {
     position: absolute;
     margin-top: 30%;
-    margin-left: 41%; } }
+    margin-left: 41%; }
+  .avantage {
+    display: none; } }
 
 @media screen and (max-height: 520px) {
   body {
