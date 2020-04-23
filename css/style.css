@@ -644,6 +644,85 @@ header {
       font-weight: 300;
       line-height: 1.583rem; }
 
+.prices {
+  background: grey url("../img/prices/bg.jpg") no-repeat center/cover;
+  padding-top: 5.31rem;
+  padding-bottom: 4.56rem; }
+  .prices__wrap {
+    width: 91%;
+    height: 37.31rem;
+    margin: auto;
+    background: #fff url("../img/prices/form-img.png") no-repeat top right/contain;
+    padding-top: 5.43rem;
+    padding-bottom: 5.43rem;
+    padding-left: 3.25rem; }
+  .prices__title {
+    color: #2c2c2d;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 2.187rem;
+    margin: 0;
+    margin-left: 10rem;
+    margin-bottom: 3rem; }
+  .prices__form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 80%; }
+    .prices__form__button {
+      margin: 0 auto; }
+  .prices__label {
+    display: block;
+    color: #939292;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.17rem;
+    margin-bottom: 0.875rem; }
+  .prices__input {
+    width: 100%;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid #939292; }
+    .prices__input::-webkit-input-placeholder {
+      color: #2c2c2d;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 2.187rem; }
+    .prices__input::-moz-placeholder {
+      color: #2c2c2d;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 2.187rem; }
+    .prices__input:-ms-input-placeholder {
+      color: #2c2c2d;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 2.187rem; }
+    .prices__input::-ms-input-placeholder {
+      color: #2c2c2d;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 2.187rem; }
+    .prices__input::placeholder {
+      color: #2c2c2d;
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 2.187rem; }
+  .prices__input-group {
+    position: relative;
+    width: 100%; }
+
+ep {
+  position: absolute;
+  color: tomato;
+  font-size: 0.8rem;
+  bottom: 0;
+  right: 0; }
+
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -742,7 +821,7 @@ header {
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(44, 44, 45, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -752,21 +831,19 @@ header {
   .modal__success__dialog {
     position: relative;
     max-width: 36.36rem;
-    background: #2c2c2d url("../img/bg-lines.svg") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
-    color: #fff; }
+    color: #2c2c2d; }
   .modal__success__close {
     position: absolute;
     right: 0;
     top: 0;
-    width: 28px;
-    height: 28px;
-    background: transparent url("../img/close.svg") no-repeat center;
+    width: 35px;
+    height: 35px;
+    background: transparent url("../img/close.png") no-repeat center;
     border: none;
     margin: 12px;
     cursor: pointer; }
   .modal__success__title {
-    font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
     text-align: center;
     margin: 0;

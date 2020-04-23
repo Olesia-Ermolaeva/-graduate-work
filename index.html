@@ -20,7 +20,7 @@
         <div class="nav menu__nav">
           <a href="#statistics" class="nav__item">Продвижение</a>
           <a href="#services" class="nav__item">Аудит</a>
-          <a href="" class="nav__item">Цены</a>
+          <a href="#prices" class="nav__item">Цены</a>
           <a href="" class="nav__item">Контакты</a>
         </div>
         <!-- /.nav menu__nav -->
@@ -203,11 +203,48 @@
 
     </section>
     <!-- /.services -->
+    <section id=prices class="section prices">
+      <div class="container">
+        <div class="prices__wrap">
+          <h2 class="prices__title">Узнать стоимость</h2>
+          <form action="send.php" method="POST" class="form prices__form">
+            <div class="input-group prices__input-group">
+              <label for="prices-user-name" class="label form__label  prices__label">Имя</label>
+              <input type="text" name="userName" class="input form__input prices__input" id="prices-user-name" placeholder="Иван Иванов">
+            </div>
+            <div class="input-group prices__input-group">
+              <label for="prices-user-email" class="label form__label  prices__label">E-mail</label>
+              <input type="email" name="userEmail" class="input form__input prices__input" id="prices-user-email" placeholder="ivanov@gmail.com">
+            </div>
+            <div class="input-group prices__input-group">
+              <label for="prices-user-site" class="label form__label  prices__label">Адрес веб-сайта</label>
+              <input type="url" name="userSite" class="input form__input prices__input" id="prices-user-site" placeholder="tatsianapavlenko.ru">
+            </div>
+            <div class="input-group prices__input-group">
+              <label for="prices-user-message" class="label form__label  prices__label">Сообщение</label>
+              <input type="text" name="userMessage" class="input form__input prices__input" id="prices-user-message" placeholder="Введите Ваше сообщение">
+            </div>
+            <button class="button prices__form__button button--primary">Узнать стоимость</button>
+          </form>
+          <!-- /.form prices__form -->
+        </div>
+        <!-- /.prices__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.prices -->
   </main>
   <footer>
 
   </footer>
-
+  <div class="modal__success">
+    <div class="modal__success__dialog">
+      <button class="modal__success__close"></button>
+      <div class="modal__success__title">Заявка отправлена! Менеджер позвонит вам через 10 минут</div>
+    </div>
+    <!-- /.modal__succes__dialog -->
+  </div>
+  <!-- /.modal modal__succes -->
 
   <script
   src="http://code.jquery.com/jquery-3.4.1.min.js"></script>

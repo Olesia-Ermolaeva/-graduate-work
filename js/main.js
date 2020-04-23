@@ -53,8 +53,8 @@ $(document).ready(function () {
   return false;
   });
 
-  //валидация формы модального окна
-  $('.modal__form').validate({
+  // валидация формы узнать стоимость
+  $(".prices__form").validate({
     rules: {
       // строчное правило
       userName: {
@@ -62,75 +62,20 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: {
-        required: true,
-        minlength: 10
-      },
-      // правило-объект
       userEmail: {
         required: true,
         email: true
       },
-      // валидация чекбокса
-      policyCheckbox: {
-        required: true
-      }
-    },
-    errorElement: "em",
-    errorClass: "invalid",
-    //сообщения
-    messages: {
-      userName: {
-        required: "Имя обязательно",
-        minlength: "Имя не короче двух букв",
-        maxlength: "Имя не длиннее 15 букв"
-      }, 
-      userPhone: {
-        required: "Телефон обязателен",
-        minlength: "Введите телефон полностью" 
-      },
-      userEmail: {
-        required: "Обязательно укажите email",
-        email: "Введите в формате: name@domain.com"
-      },
-      policyCheckbox: "Согласитесь с обработкой данных"
-    },
-    submitHandler: function(form) {
-      $.ajax({
-        type: "POST",
-        url: "send.php",
-        data: $(form).serialize(),
-        success: function (response) {
-          $(form)[0].reset();
-          modal.removeClass('modal--visible');
-          $('.modal__success').addClass('modal__success--visible');
-        },
-        error: function (response) {
-          console.error('Ошибка запроса' + response);
-        }
-      });
-    }  
-  });
-
-  // валидация формы онлайн-контроль
-  $(".control__form").validate({
-    rules: {
-      // строчное правило
-      userName: {
+      userSite: {
         required: true,
-        minlength: 2,
-        maxlength: 15
+        url: true
       },
-      userPhone: {
+      userMessage: {
         required: true,
         minlength: 10
-      },
-      // валидация чекбокса
-      policyCheckbox: {
-        required: true
       }
     },
-    errorElement: "ec",
+    errorElement: "ep",
     errorClass: "invalid",
     //сообщения
     messages: {
@@ -139,11 +84,18 @@ $(document).ready(function () {
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не длиннее 15 букв" 
       }, 
-      userPhone: {
-        required: "Телефон обязателен",
-        minlength: "Введите телефон полностью" 
+      userEmail: {
+        required: "E-mail обязателен",
+        email: "Введите верный e-mail" 
       },
-      policyCheckbox: "Согласитесь с обработкой данных"
+      userSite: {
+        required: "Адрес сайта обязателен",
+        url: "Введите верный адрес сайта"
+      },
+      userMessage: {
+        required: "Напишите что-нибудь",
+        minlength: "Напишите больше"
+      }
     },  
     submitHandler: function(form) {
       $.ajax({
@@ -218,7 +170,8 @@ $(document).ready(function () {
   });
 
   // маска для телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "Ваш номер телефона:"});
+  $('[type=tel]').mask('+7 000 000-00-00', {placeholder: "+7 999 888-88-88"});
+ 
   //видеоплеер
   var player;
   var stastics = $('.statistics__description');
@@ -239,25 +192,6 @@ $(document).ready(function () {
   }
 });
 
-//загрузка карты
-YaMapsShown = false;
-$(document).ready(function (){
-  $(window).scroll(function() {
-    if (!YaMapsShown){
-     if($(window).scrollTop() + $(window).height() > $(document).height() - 700) {      
-      showYaMaps();
-      YaMapsShown = true;
-     }
-    }
-  });
-});
-
-function showYaMaps(){
-  var script   = document.createElement("script");
-  script.type  = "text/javascript";
-  script.src   = "https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abd34938594550b3ce2d66bcb5f2a1d7f673189f8678aa2a77ba2c843bf53da47&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false";
-  document.getElementById("YaMaps").appendChild(script);
-}
 
 // прокрутка якорных ссылок
 $("body").on('click', '[href*="#"]', function(e){
