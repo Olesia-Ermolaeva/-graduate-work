@@ -333,6 +333,10 @@ template {
       border: 2px solid #ff5a3c;
       background: #fff;
       color: #ff5a3c; }
+  .button__link {
+    color: #fff; }
+    .button__link:hover {
+      color: #ff5a3c; }
 
 .container {
   width: 67%;
@@ -686,7 +690,8 @@ header {
     width: 100%;
     padding-bottom: 5px;
     border: none;
-    border-bottom: 1px solid #939292; }
+    border-bottom: 1px solid #939292;
+    background: transparent; }
     .prices__input::-webkit-input-placeholder {
       color: #2c2c2d;
       font-size: 1.125rem;
@@ -810,6 +815,43 @@ ep {
     align-self: flex-end;
     padding: 1.6rem 4.4rem; }
 
+footer {
+  background: #fff url("../img/footer-bg.png") no-repeat center/cover;
+  padding-top: 4.06rem;
+  padding-bottom: 3.06rem; }
+
+.footer__logo__img {
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem; }
+
+.footer__logo__text {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: #38393b;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.187rem;
+  text-transform: uppercase;
+  letter-spacing: 1.02px; }
+  .footer__logo__text::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #38393b;
+    bottom: -3rem;
+    left: 0; }
+
+.copy {
+  color: #2c2c2d;
+  font-weight: 600;
+  line-height: 2.33rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 5.5rem; }
+
 .modal__success {
   opacity: 0;
   visibility: hidden;
@@ -878,8 +920,12 @@ ep {
   .nav__item {
     margin-right: 1rem; }
   .services__card {
-    width: 90%;
-    height: 25rem; } }
+    width: 95%;
+    height: 25rem; }
+  .prices__form {
+    width: 90%; }
+  .prices__wrap {
+    background: #e3fbdd; } }
 
 @media screen and (max-width: 994px) {
   .nav {
