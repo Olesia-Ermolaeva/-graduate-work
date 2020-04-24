@@ -26,7 +26,7 @@
         <!-- /.nav menu__nav -->
         <div class="contacts menu__contacts">
           <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
-          <button class="button contacts__button button--primary">Заказать звонок</button>
+          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
 
         </div>
         <!-- /.contacts menu__contacts -->
@@ -49,7 +49,7 @@
               <p class="hero__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
               </p>
-              <button class="button hero__button button--primary">Обратный звонок</button>
+              <button class="button hero__button button--primary" data-toggle="modal">Обратный звонок</button>
             </div>
             <!-- /.hero__content -->
       </div>
@@ -287,6 +287,7 @@
     </section>
     <!-- /.section feedback -->
   </main>
+  <div class="upbutton" id="upbutton"></div>
   <footer>
     <div class="container">
       <div class="logo footer__logo">
@@ -298,6 +299,26 @@
     </div>
     <!-- /.container -->
   </footer>
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <h3 class="modal__title">Пожалуйста, позвоните мне</h3>
+      <form action="send.php" method="POST" class="form modal__form">
+        <div class="input-group modal__input-group">
+          <label for="modal-user-name" class="label form__label">Меня зовут</label>
+          <input type="text" name="userName" id="modal-user-name" placeholder="Иван Иванов" class="input form__input modal__input">
+        </div>
+        <div class="input-group modal__input-group">
+          <label for="modal-user-phone" class="label form__label">Мой телефон</label>
+          <input type="tel" name="userPhone" id="modal-user-phone" placeholder="+7 999 888-88-88" class="input form__input modal__input input">
+        </div>
+        <button class="button button--primary modal__button">Отправить заявку</button>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <div class="modal__success">
     <div class="modal__success__dialog">
       <button class="modal__success__close"></button>

@@ -53,6 +53,51 @@ $(document).ready(function () {
   return false;
   });
 
+  //валидация формы модального окна
+  $(".modal__form").validate({
+    rules: {
+      // строчное правило
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 10
+      }
+    },
+    errorElement: "em",
+    errorClass: "invalid",
+    //сообщения
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Имя не короче двух букв",
+        maxlength: "Имя не длиннее 15 букв"
+      }, 
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: "Введите телефон полностью" 
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          $('.modal__success').addClass('modal__success--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса' + response);
+        }
+      });
+    }  
+  });
+
   // валидация формы узнать стоимость
   $(".prices__form").validate({
     rules: {
