@@ -90,7 +90,7 @@ $(document).ready(function () {
       },
       userSite: {
         required: "Адрес сайта обязателен",
-        url: "Введите верный адрес сайта"
+        url: "Введите адрес сайта в формате http://www.mysite.ru/"
       },
       userMessage: {
         required: "Напишите что-нибудь",

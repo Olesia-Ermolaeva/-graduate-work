@@ -1,14 +1,25 @@
 @media screen and ( max-width: 1870px )
   .container
     width: 80%
+  .feedback
+    &__container
+      width: 80%
 @media screen and ( max-width: 1600px )
   .container
     width: 90%
+  .feedback
+    &__container
+      width: 90%
+  .statistics
+    &__description
+      left: 50%
+      margin-left: -35%
+      margin-top: -9.3rem
+      padding: 8rem 4rem
+      width: 70%
   .video
     &__play
-      position: absolute
-      margin-top: 20%
-      margin-left: 46%
+      margin-top: 18%
 @media screen and ( max-width: 1450px )
   html
     font-size: 14px
@@ -26,16 +37,24 @@
   .nav
     &__item
       margin-right: 1rem
-  .services
-    &__card
-      width: 95%
-      height: 25rem
+  .hero
+    background: $light url('../img/hero/hero_bg.png') no-repeat center / cover
+  .statistics
+    &__video
+      &__play
+        margin-top: 23%
   .prices
     &__form
-      width: 90%
+      width: 100%
     &__wrap
       background: $back
+      padding-right: 3.25rem
+    &__title
+      width: 100%
 @media screen and ( max-width: 994px )
+  .feedback
+    &__container
+      width: 100%
   .nav
     display: none
   .social
@@ -51,32 +70,54 @@
         background: $primary
         padding: 3rem
         margin-top: 3rem
+  .row__services
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    margin-left: 2rem
   .col-30__services
-    width: 100%
+    width: 50%
     flex-basis: 50%
+    margin-bottom: 2rem
+    margin-right: 0
   header
     background: $light
   .hero
-    background: $light
+    background: $back
     padding-bottom: 20rem
     &__content
       margin-top: 0
       margin: auto
     &__photo
       display: none
-  .video
-    &__play
-      position: absolute
-      margin-top: 25%
-      margin-left: 43%
+  .statistics
+    &__description
+      left: 50%
+      margin-left: -35%
+      margin-top: -9.3rem
+      padding: 4rem 2rem
+      width: 70%
+    &__video
+      &__play
+        display: none
+        &__mobile
+          display: inline-block
   .feedback
     background: $light
     padding-bottom: 0
     &__title
       margin: auto
       margin-bottom: 2rem
+      width: 100%
+      text-align: center
+      padding: 0 1rem
     &__description
       justify-content: center
+      padding: 0 1rem
+    &__form
+      width: 100%
+      padding: 5rem
 @media screen and ( max-width: 760px )
   .container
     width: 95%
@@ -90,31 +131,77 @@
     width: 80%
     flex-basis: 90%
   .hero
-    background: $light
     padding-bottom: 5rem
+    &__content
+      margin-bottom: 17rem
   .statistics
     &__description
-      display: none
-  .video
-    &__play
-      position: absolute
-      margin-top: 25%
-      margin-left: 43%
+      left: 50%
+      margin-left: -45%
+      margin-top: -23rem
+      padding: 4rem 2rem
+      width: 90%
+      &__item
+        &--title
+          color: $primary
+          font-size: 2rem
+          font-weight: 500
+          line-height: 5.195rem
+          letter-spacing: -3.34px
+          text-align: center
+        &--text
+          color: $dark
+          font-size: 1rem
+          font-weight: 500
+          line-height: 2.33rem
+          text-align: center
+      &__video
+        &__play
+          &__mobile
+            margin-top: 30%
   .services
     &__card
       margin-left: 0
       margin-right: 0
 @media screen and ( max-width: 570px )
   .contacts
+    &__phone
+      margin-right: 0
     &__button
       display: none
-  .video
-    &__play
-      position: absolute
-      margin-top: 30%
-      margin-left: 41%
+  header
+    padding: 1rem 0
+  .statistics
+    &__description
+      left: 50%
+      margin-left: -45%
+      margin-top: -10rem
+      padding: 0
+      width: 90%
+      min-height: 10rem
+    &__item
+      &--title
+        color: $primary
+        font-size: 2rem
+        font-weight: 500
+        line-height: 2rem
+        letter-spacing: -2px
+        text-align: center
+      &--text
+        color: $dark
+        font-size: 1rem
+        font-weight: 500
+        line-height: 1.5rem
+        text-align: center
+    &__video
+        &__play
+          &__mobile
+            margin-top: 40%
   .avantage
     display: none
+  .feedback
+    &__form
+      padding: 2rem
 @media screen and ( max-height: 520px )
   body
     font-family: 'Ubuntu', sans-serif
