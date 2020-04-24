@@ -1,0 +1,85 @@
+.cases
+  padding-top: 4.9rem
+  padding-bottom: 4.56rem 
+  &__description
+    width: 65%
+    text-align: center
+    margin: auto
+    color: $dark
+    font-weight: 400
+    line-height: 1.375rem
+    margin-bottom: 3.56rem
+  &__row
+    display: flex
+    justify-content: center
+    align-items: start
+    flex-wrap: wrap
+    width: 62.25rem
+    height: 31.62rem
+    background: $light url('../img/cases/cases-bg.png') no-repeat top left 
+    box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+    color: $dark
+    margin: auto
+    padding-top: 1.8rem
+    padding-left: 2.18rem
+    padding-right: 2.18rem
+  &__button
+    margin: auto
+    margin-top: 2.5rem
+    width: 13.6rem
+    text-align: center
+    padding: 1rem 4 rem
+    border-radius: 35rem
+  &__ul
+    margin-block-start: 0
+    margin-block-end: 0
+    padding-inline-start: 0
+  &__list
+    list-style-type: none
+    &::before
+      content: url('../img/cases/li.png')
+      margin-right: 4px
+.swiper
+  &-button                                   
+    &-prev, &-next
+      width: 23px
+      height: 43px
+      &::after
+        display: none
+    &-prev
+      left: 70px
+      background: url('../img/arrow-prev.svg') no-repeat center
+    &-next
+      background: url('../img/arrow-next.svg') no-repeat center
+      left: auto
+      right: 70px
+.slide
+  &__title
+    flex-basis: 100%
+    text-align: center
+    font-size: 1.375rem
+    font-weight: 500
+    line-height: 1.375rem
+    margin-block-end: 0
+    margin-block-start: 0
+  &__text
+    line-height: 1.75rem
+    margin-bottom: 1.8rem
+    &--green
+      color: $green
+      font-weight: 700
+      line-height: 1.75rem
+  &__link
+    text-decoration: none
+    color: $dark
+.shedule
+  &__title
+    width: 25rem
+    font-size: 1.125rem
+    font-weight: 500
+    line-height: 1.375rem
+  &__text
+    font-size: 0.875rem
+    font-weight: 400
+    color: $secondary
+    

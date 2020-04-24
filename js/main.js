@@ -15,25 +15,12 @@ $(document).ready(function () {
     modalSuccess.toggleClass('modal__success--visible');
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
+  var swiper = new Swiper('.swiper-container', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   });
-
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
-
-  next.css('left', prev.width() + 35 + bullets.width() + 35)
-  bullets.css('left', prev.width() + 35)
 
   new WOW().init();
 
