@@ -1,0 +1,59 @@
+.review
+  background: $light url('../img/review/review-bg.png') no-repeat center left
+  padding-bottom: 5rem
+  &__title
+    margin-top: 2.5rem
+    margin-bottom: 1.77rem
+  &__description
+    width: 65%
+    text-align: center
+    margin: auto
+    color: $dark
+    font-weight: 400
+    line-height: 1.375rem
+    margin-bottom: 3.56rem
+  &__row
+    display: flex
+    justify-content: center
+    align-items: start
+    flex-wrap: wrap
+    width: 58.18rem
+    min-height: 16.75rem
+    background: transparent
+    color: $secondary
+    margin: auto
+    padding-top: 1.8rem
+    padding-left: 2.18rem
+    padding-right: 2.18rem
+  &__text
+    text-align: center
+    font-size: 1.375rem
+    font-weight: 300
+    line-height: 2.18rem
+    margin-bottom: 2.31rem
+  &__card
+    display: flex
+    align-items: center
+    &__img
+      margin-right: 1rem
+    &__name
+      color: $black
+      font-size: 1.125rem
+      font-weight: 700
+      line-height: 2.18rem
+    &__position
+      color: $secondary
+  &__swiper
+    &-button                                   
+      &-prev, &-next
+        width: 23px
+        height: 43px
+        &::after
+          display: none
+      &-prev
+        left: 100px
+        background: url('../img/arrow-prev.svg') no-repeat center
+      &-next
+        background: url('../img/arrow-next.svg') no-repeat center
+        left: auto
+        right: 100px

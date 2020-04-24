@@ -121,6 +121,15 @@
     &__form
       width: 100%
       padding: 5rem
+  .cases
+    &__row
+      width: 70%
+      height: 100%
+  .review
+    &__row
+      width: 70%
+      height: 100%
+
 @media screen and ( max-width: 760px )
   .container
     width: 95%
@@ -166,6 +175,23 @@
     &__card
       margin-left: 0
       margin-right: 0
+  .cases
+    &__row
+      width: 60%
+  .swiper
+    &-button                                   
+      &-prev, &-next
+        width: 23px
+        height: 43px
+        &::after
+          display: none
+      &-prev
+        left: 10px
+        background: url('../img/arrow-prev.svg') no-repeat center
+      &-next
+        background: url('../img/arrow-next.svg') no-repeat center
+        left: auto
+        right: 10px
 @media screen and ( max-width: 570px )
   .contacts
     &__phone

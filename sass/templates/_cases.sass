@@ -1,6 +1,9 @@
 .cases
   padding-top: 4.9rem
-  padding-bottom: 4.56rem 
+  padding-bottom: 2.3rem 
+  &__title
+    margin-top: 2rem
+    margin-bottom: 1.77rem
   &__description
     width: 65%
     text-align: center
@@ -39,39 +42,25 @@
     &::before
       content: url('../img/cases/li.png')
       margin-right: 4px
-.swiper
-  &-button                                   
-    &-prev, &-next
-      width: 23px
-      height: 43px
-      &::after
-        display: none
-    &-prev
-      left: 70px
-      background: url('../img/arrow-prev.svg') no-repeat center
-    &-next
-      background: url('../img/arrow-next.svg') no-repeat center
-      left: auto
-      right: 70px
-.slide
-  &__title
-    flex-basis: 100%
-    text-align: center
-    font-size: 1.375rem
-    font-weight: 500
-    line-height: 1.375rem
-    margin-block-end: 0
-    margin-block-start: 0
-  &__text
-    line-height: 1.75rem
-    margin-bottom: 1.8rem
-    &--green
-      color: $green
-      font-weight: 700
+  &__slide
+    &__title
+      flex-basis: 100%
+      text-align: center
+      font-size: 1.375rem
+      font-weight: 500
+      line-height: 1.375rem
+      margin-block-end: 0
+      margin-block-start: 0
+    &__text
       line-height: 1.75rem
-  &__link
-    text-decoration: none
-    color: $dark
+      margin-bottom: 1.8rem
+      &--green
+        color: $green
+        font-weight: 700
+        line-height: 1.75rem
+    &__link
+      text-decoration: none
+      color: $dark
 .shedule
   &__title
     width: 25rem
