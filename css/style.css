@@ -536,6 +536,8 @@ header {
     line-height: 1.75rem;
     padding-bottom: 1.3rem; }
   .hero__button {
+    margin-top: 1rem;
+    margin-left: 0.3rem;
     padding: 0.8rem 2.5rem;
     border-radius: 25px; }
   .hero__social {
@@ -578,7 +580,7 @@ header {
 .statistics {
   position: relative;
   width: 100%;
-  min-height: 39.56rem;
+  height: 39.56rem;
   background: #fff url("../img/statistics/video-bg.jpg") no-repeat center/cover; }
   .statistics__description {
     position: absolute;
@@ -670,13 +672,14 @@ header {
 
 .col-30__services {
   flex-basis: 30%;
-  margin-bottom: 2rem;
-  margin-right: 2rem; }
+  margin-bottom: 2.3rem;
+  margin-right: 2.3rem; }
 
 .services {
   background: #fff url("../img/services/services-bg.png") no-repeat center;
   padding-bottom: 12rem; }
   .services__title {
+    margin-top: 1.7rem;
     margin-bottom: 1.68rem; }
   .services__description {
     width: 65%;
@@ -690,7 +693,7 @@ header {
     background: #fff;
     border-radius: 5px;
     border: 1px solid #c9c8c8;
-    width: 94%;
+    width: 97%;
     min-height: 19.37rem;
     padding: 2rem 2rem; }
     .services__card:hover {
@@ -931,6 +934,89 @@ ep {
     background: url("../img/arrow-next.svg") no-repeat center;
     left: auto;
     right: 100px; }
+
+.news {
+  background: #e3fbdd;
+  padding-top: 3.875rem;
+  padding-bottom: 5.75rem; }
+  .news__title {
+    margin-bottom: 1.812rem; }
+  .news__description {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+    color: #2c2c2d;
+    font-weight: 400;
+    line-height: 1.375rem;
+    margin-bottom: 3.56rem; }
+  .news__row {
+    position: relative;
+    padding-bottom: 8rem; }
+  .news__nav {
+    position: absolute;
+    bottom: 50px; }
+  .news__image {
+    position: relative; }
+  .news__date {
+    position: absolute;
+    width: 3.5rem;
+    height: 4.125rem;
+    background: #ff5a3c;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    top: 24px;
+    left: 21px;
+    padding-top: 13px;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.125rem; }
+    .news__date--strong {
+      font-size: 1.125rem;
+      font-weight: 700; }
+  .news__card {
+    position: absolute;
+    top: 15.31rem;
+    left: 38.56rem;
+    width: 34.37rem;
+    height: 21.18rem;
+    background: #fff;
+    box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05);
+    padding: 2.25rem 2.5rem 3.125rem 2.375rem; }
+    .news__card__title {
+      color: #2c2c2d;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.125rem;
+      margin-bottom: 2rem; }
+    .news__card__text {
+      font-weight: 300;
+      line-height: 1.645rem;
+      margin-bottom: 2.3rem; }
+  .news__button {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    padding: 0.9rem 3.6rem;
+    border-radius: 45px; }
+  .news__link {
+    color: #fff; }
+    .news__link:hover {
+      color: #ff5a3c; }
+  .news__swiper-container {
+    margin-left: 3rem; }
+  .news__swiper-button-prev, .news__swiper-button-next {
+    width: 56px;
+    height: 32px; }
+    .news__swiper-button-prev::after, .news__swiper-button-next::after {
+      display: none; }
+  .news__swiper-button-prev {
+    bottom: 0;
+    left: 0;
+    background: url("../img/news/news-arrow-prev.png") no-repeat center; }
+  .news__swiper-button-next {
+    background: url("../img/news/news-arrow-next.png") no-repeat center;
+    bottom: 0;
+    left: 78px; }
 
 .feedback {
   background: #fff url("../img/form-bg.jpg") no-repeat top left;
@@ -1240,9 +1326,7 @@ em {
     margin-left: -35%;
     margin-top: -9.3rem;
     padding: 8rem 4rem;
-    width: 70%; }
-  .video__play {
-    margin-top: 18%; } }
+    width: 70%; } }
 
 @media screen and (max-width: 1450px) {
   html {
@@ -1340,7 +1424,25 @@ em {
     height: 100%; }
   .review__row {
     width: 70%;
-    height: 100%; } }
+    height: 100%; }
+  .news {
+    padding-bottom: 0; }
+    .news__swiper-container {
+      margin-left: 0; }
+    .news__row {
+      padding-bottom: 10rem; }
+    .news__nav {
+      bottom: 50px; }
+    .news__card {
+      top: auto;
+      left: auto;
+      bottom: 5rem;
+      right: 5rem;
+      width: 34.37rem;
+      height: 21.18rem;
+      background: #fff;
+      box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05);
+      padding: 2.25rem 2.5rem 3.125rem 2.375rem; } }
 
 @media screen and (max-width: 760px) {
   .container {
@@ -1358,46 +1460,60 @@ em {
     padding-bottom: 5rem; }
     .hero__content {
       margin-bottom: 17rem; }
-  .statistics__description {
-    left: 50%;
-    margin-left: -45%;
-    margin-top: -23rem;
-    padding: 4rem 2rem;
-    width: 90%; }
-    .statistics__description__item--title {
-      color: #ff5a3c;
-      font-size: 2rem;
-      font-weight: 500;
-      line-height: 5.195rem;
-      letter-spacing: -3.34px;
-      text-align: center; }
-    .statistics__description__item--text {
-      color: #2c2c2d;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 2.33rem;
-      text-align: center; }
-    .statistics__description__video__play__mobile {
-      margin-top: 30%; }
+  .statistics {
+    height: 20rem; }
+    .statistics__description {
+      left: 50%;
+      margin-left: -45%;
+      margin-top: -23rem;
+      padding: 4rem 2rem;
+      width: 90%; }
+      .statistics__description__item--title {
+        color: #ff5a3c;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 5.195rem;
+        letter-spacing: -3.34px;
+        text-align: center; }
+      .statistics__description__item--text {
+        color: #2c2c2d;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 2.33rem;
+        text-align: center; }
+    .statistics__video__play__mobile {
+      margin-top: 7rem; }
   .services__card {
     margin-left: 0;
     margin-right: 0; }
   .cases__row {
     width: 60%; }
-  .swiper-button-prev, .swiper-button-next {
+  .news__nav {
+    position: absolute;
+    bottom: 15px; }
+  .primary__swiper-button-prev, .primary__swiper-button-next {
     width: 23px;
     height: 43px; }
-    .swiper-button-prev::after, .swiper-button-next::after {
+    .primary__swiper-button-prev::after, .primary__swiper-button-next::after {
       display: none; }
-  .swiper-button-prev {
+  .primary__swiper-button-prev {
     left: 10px;
     background: url("../img/arrow-prev.svg") no-repeat center; }
-  .swiper-button-next {
+  .primary__swiper-button-next {
     background: url("../img/arrow-next.svg") no-repeat center;
     left: auto;
     right: 10px; } }
 
 @media screen and (max-width: 570px) {
+  h1 {
+    font-size: 3rem; }
+  .section__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: center; }
+  .hero__title {
+    line-height: 3rem; }
   .contacts__phone {
     margin-right: 0; }
   .contacts__button {
@@ -1407,7 +1523,7 @@ em {
   .statistics__description {
     left: 50%;
     margin-left: -45%;
-    margin-top: -10rem;
+    margin-top: -23rem;
     padding: 0;
     width: 90%;
     min-height: 10rem; }
@@ -1424,14 +1540,50 @@ em {
     font-weight: 500;
     line-height: 1.5rem;
     text-align: center; }
-  .statistics__video__play__mobile {
-    margin-top: 40%; }
+  .services {
+    padding-bottom: 3rem; }
   .avantage {
     display: none; }
+  .feedback__title {
+    font-size: 1.5rem; }
+  .feedback__description__item {
+    line-height: 1.3rem; }
   .feedback__form {
-    padding: 2rem; } }
-
-@media screen and (max-height: 520px) {
-  body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem; } }
+    padding: 2rem; }
+  .cases {
+    padding-top: 1rem; }
+    .cases__row {
+      padding: 1rem 0; }
+    .cases__slide__text {
+      line-height: 1rem;
+      margin-bottom: 0; }
+  .review {
+    background: #fff;
+    padding-bottom: 2rem; }
+    .review__text {
+      font-size: 1rem;
+      line-height: 1rem; }
+  .news {
+    padding-bottom: 2rem; }
+    .news__image {
+      display: none; }
+    .news__date {
+      display: none; }
+    .news__swiper-container {
+      padding-bottom: 25rem; }
+    .news__card {
+      top: 0;
+      left: 50%;
+      margin-left: -10rem;
+      width: 20rem;
+      height: 30rem;
+      background: #fff;
+      box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05);
+      padding: 2.25rem 2.5rem 3.125rem 2.375rem; }
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .footer__logo__text::after {
+    bottom: -1rem; }
+  .copy {
+    margin-top: 2rem; } }

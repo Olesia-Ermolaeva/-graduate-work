@@ -20,9 +20,6 @@
       margin-top: -9.3rem
       padding: 8rem 4rem
       width: 70%
-  .video
-    &__play
-      margin-top: 18%
 @media screen and ( max-width: 1450px )
   html
     font-size: 14px
@@ -129,7 +126,25 @@
     &__row
       width: 70%
       height: 100%
-
+  .news
+    padding-bottom: 0
+    &__swiper
+      &-container
+        margin-left: 0
+    &__row
+      padding-bottom: 10rem
+    &__nav
+      bottom: 50px
+    &__card
+      top: auto
+      left: auto
+      bottom: 5rem
+      right: 5rem
+      width: 34.37rem
+      height: 21.18rem
+      background: $light
+      box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+      padding: 2.25rem 2.5rem 3.125rem 2.375rem
 @media screen and ( max-width: 760px )
   .container
     width: 95%
@@ -147,6 +162,7 @@
     &__content
       margin-bottom: 17rem
   .statistics
+    height: 20rem
     &__description
       left: 50%
       margin-left: -45%
@@ -167,10 +183,10 @@
           font-weight: 500
           line-height: 2.33rem
           text-align: center
-      &__video
-        &__play
-          &__mobile
-            margin-top: 30%
+    &__video
+      &__play
+        &__mobile
+          margin-top: 7rem
   .services
     &__card
       margin-left: 0
@@ -178,21 +194,37 @@
   .cases
     &__row
       width: 60%
-  .swiper
-    &-button                                   
-      &-prev, &-next
-        width: 23px
-        height: 43px
-        &::after
-          display: none
-      &-prev
-        left: 10px
-        background: url('../img/arrow-prev.svg') no-repeat center
-      &-next
-        background: url('../img/arrow-next.svg') no-repeat center
-        left: auto
-        right: 10px
+  .news
+    &__nav
+      position: absolute
+      bottom: 15px
+  .primary
+    &__swiper
+      &-button                                   
+        &-prev, &-next
+          width: 23px
+          height: 43px
+          &::after
+            display: none
+        &-prev
+          left: 10px
+          background: url('../img/arrow-prev.svg') no-repeat center
+        &-next
+          background: url('../img/arrow-next.svg') no-repeat center
+          left: auto
+          right: 10px
 @media screen and ( max-width: 570px )
+  h1
+    font-size: 3rem
+  .section
+    &__title
+      font-size: 1.5rem
+      font-weight: 700
+      line-height: 1.5rem
+      text-align: center
+  .hero
+    &__title
+      line-height: 3rem
   .contacts
     &__phone
       margin-right: 0
@@ -204,7 +236,7 @@
     &__description
       left: 50%
       margin-left: -45%
-      margin-top: -10rem
+      margin-top: -23rem
       padding: 0
       width: 90%
       min-height: 10rem
@@ -222,16 +254,58 @@
         font-weight: 500
         line-height: 1.5rem
         text-align: center
-    &__video
-        &__play
-          &__mobile
-            margin-top: 40%
+  .services
+    padding-bottom: 3rem
   .avantage
     display: none
   .feedback
+    &__title
+      font-size: 1.5rem
+    &__description
+      &__item
+        line-height: 1.3rem
     &__form
-      padding: 2rem
-@media screen and ( max-height: 520px )
-  body
-    font-family: 'Ubuntu', sans-serif
-    font-size: 1rem
+      padding: 2rem 
+  .cases
+    padding-top: 1rem
+    &__row
+      padding: 1rem 0
+    &__slide
+      &__text
+        line-height: 1rem
+        margin-bottom: 0
+  .review
+    background: $light
+    padding-bottom: 2rem
+    &__text
+      font-size: 1rem
+      line-height: 1rem
+  .news
+    padding-bottom: 2rem
+    &__image
+      display: none
+    &__date
+      display: none
+    &__swiper
+      &-container
+        padding-bottom: 25rem
+    &__card
+      top: 0
+      left: 50%
+      margin-left: -10rem
+      width: 20rem
+      height: 30rem
+      background: $light
+      box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+      padding: 2.25rem 2.5rem 3.125rem 2.375rem
+  footer
+    padding-top: 1rem
+    padding-bottom: 1rem
+  .footer
+    &__logo
+      &__text
+        &::after
+          bottom: -1rem
+  .copy
+    margin-top: 2rem
+
