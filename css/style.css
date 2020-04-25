@@ -592,7 +592,7 @@ header {
     margin-top: -7.62rem;
     padding: 6rem 4rem;
     width: 61%;
-    min-height: 20.18rem;
+    height: 20.18rem;
     background: #fff url("../img/statistics/bg.png") no-repeat center;
     box-shadow: 0 0 22px 5px rgba(34, 34, 34, 0.05); }
   .statistics__item--title {
@@ -994,6 +994,8 @@ ep {
       line-height: 1.645rem;
       margin-bottom: 2.3rem; }
   .news__button {
+    width: 15rem;
+    margin: auto;
     text-decoration: none;
     margin-left: 0.5rem;
     padding: 0.9rem 3.6rem;
@@ -1019,7 +1021,7 @@ ep {
     left: 78px; }
 
 .feedback {
-  background: #fff url("../img/form-bg.jpg") no-repeat top left;
+  background: #fff url("../img/form-bg.jpg") no-repeat center/cover;
   padding-top: 5.4rem;
   padding-bottom: 3rem; }
   .feedback__container {
@@ -1523,7 +1525,7 @@ em {
   .statistics__description {
     left: 50%;
     margin-left: -45%;
-    margin-top: -23rem;
+    margin-top: -21rem;
     padding: 0;
     width: 90%;
     min-height: 10rem; }
