@@ -4,11 +4,17 @@ footer
   padding-bottom: 3.06rem
 .footer
   &__logo
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
     &__img
       display: block
-      margin: auto
+      margin-left: -1rem
       margin-bottom: 1rem
     &__text
+      flex-basis: 100%
+      margin-left: -1rem
       display: block
       position: relative
       text-align: center
@@ -17,20 +23,22 @@ footer
       font-weight: 700
       line-height: 1.187rem
       text-transform: uppercase
-      letter-spacing: 1.02px
+      letter-spacing: 1.4px
       &::after
         position: absolute
         content: ''
-        width: 100%
+        width: 866px
         height: 1px
         background: $secondary
         bottom: -3rem
-        left: 0
+        left: 50%
+        margin-left: -433px
 .copy
   color: $dark
-  font-weight: 600
+  font-weight: 700
   line-height: 2.33rem
   text-align: center
+  letter-spacing: 0.3px
   margin: auto
   margin-top: 5.5rem
 

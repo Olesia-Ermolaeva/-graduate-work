@@ -1,11 +1,12 @@
 .review
-  background: $light url('../img/review/review-bg.png') no-repeat center left
-  padding-bottom: 5rem
+  background: $light url('../img/review/review-bg.png') no-repeat
+  background-position: top 3.7rem left 0
+  padding-bottom: 6rem
   &__title
-    margin-top: 2.5rem
+    margin-top: 1.8rem
     margin-bottom: 1.77rem
   &__description
-    width: 65%
+    width: 50rem
     text-align: center
     margin: auto
     color: $dark
@@ -17,15 +18,16 @@
     justify-content: center
     align-items: start
     flex-wrap: wrap
-    width: 58.18rem
+    width: 65rem
     min-height: 16.75rem
     background: transparent
     color: $secondary
     margin: auto
-    padding-top: 1.8rem
+    padding-top: 1.3rem
     padding-left: 2.18rem
     padding-right: 2.18rem
   &__text
+    width: 60rem
     text-align: center
     font-size: 1.375rem
     font-weight: 300
@@ -34,15 +36,24 @@
   &__card
     display: flex
     align-items: center
+    justify-content: start
+    margin-left: -2rem
     &__img
       margin-right: 1rem
     &__name
       color: $black
       font-size: 1.125rem
       font-weight: 700
-      line-height: 2.18rem
+      margin-top: -0.5rem
     &__position
       color: $secondary
+  &__button
+    margin: auto
+    margin-top: 4rem
+    width: 13.6rem
+    text-align: center
+    padding: 1rem 4 rem
+    border-radius: 35rem
   &__swiper
     &-button                                   
       &-prev, &-next
@@ -51,9 +62,9 @@
         &::after
           display: none
       &-prev
-        left: 100px
+        left: 120px
         background: url('../img/arrow-prev.svg') no-repeat center
       &-next
         background: url('../img/arrow-next.svg') no-repeat center
         left: auto
-        right: 100px
+        right: 120px
