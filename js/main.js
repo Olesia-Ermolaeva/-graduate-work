@@ -212,7 +212,7 @@ $(document).ready(function () {
   var stastics = $('.statistics__description');
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-      height: '633px',
+      height: '100%',
       width: '100%',
       videoId: '0uwmN9Bj3Ko',
       events: {

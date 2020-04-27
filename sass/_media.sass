@@ -54,6 +54,43 @@
     &__title
       width: 100%
 @media screen and ( max-width: 994px )
+  .button
+    &:hover
+      cursor: default
+    &--primary
+      &:hover
+        color: $light
+        background-color: $primary
+    &--light
+      &:hover
+        color: $primary
+        background-color: $light
+    &__link
+      &:hover
+        color: $light
+  .menu
+    &__logo
+      &__text
+        &:hover
+          color: $secondary
+  .nav
+    &__item
+      &:hover
+        &::after
+          display: none
+  .contacts
+    &__phone
+      &:hover
+        color: $secondary
+  .news
+    &__link
+      &:hover
+        color: $light
+  .services
+    &__card
+      &:hover
+        cursor: default
+        border-bottom: none
   .feedback
     &__container
       width: 100%
@@ -232,6 +269,18 @@
           background: url('../img/arrow-next.svg') no-repeat center
           left: auto
           right: 10px
+  .review
+    background: $light
+    padding-bottom: 2rem
+    &__text
+      font-size: 1rem
+      line-height: 1rem
+    &__swiper
+      &-button                                   
+        &-prev
+          left: 10px
+        &-next
+          right: 10px
 @media screen and ( max-width: 570px )
   h1
     font-size: 3rem
@@ -258,8 +307,7 @@
       margin-top: -12rem
       padding-top: 2rem
       width: 90%
-      height: 10rem
-      
+      height: 10rem  
     &__item
       &--title
         color: $primary
@@ -294,20 +342,11 @@
       &__text
         line-height: 1rem
         margin-bottom: 0
-  .review
-    background: $light
-    padding-bottom: 2rem
-    &__text
-      font-size: 1rem
-      line-height: 1rem
-    &__swiper
-      &-button                                   
-        &-prev
-          left: 10px
-        &-next
-          right: 10px
   .news
     padding-bottom: 2rem
+    &__nav
+      left: 50%
+      margin-left: -5.5rem
     &__image
       display: none
     &__date
