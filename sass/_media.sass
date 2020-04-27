@@ -46,6 +46,8 @@
   .prices
     &__form
       width: 100%
+      &__button
+        margin: auto
     &__wrap
       background: $back
       padding-right: 3.25rem
@@ -91,6 +93,8 @@
       margin: auto
     &__photo
       display: none
+    &__text
+      width: 90%
   .statistics
     &__description
       left: 50%
@@ -103,6 +107,9 @@
         display: none
         &__mobile
           display: inline-block
+  .services
+    &__description
+      width: 90%
   .feedback
     background: $light
     padding-bottom: 0
@@ -126,6 +133,8 @@
     &__row
       width: 70%
       height: 100%
+    &__description
+      width: 90%
   .news
     padding-bottom: 0
     &__swiper
@@ -145,6 +154,16 @@
       background: $light
       box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
       padding: 2.25rem 2.5rem 3.125rem 2.375rem
+  .footer
+    &__logo
+      &__text
+        &::after
+          width: 75%
+          height: 1px
+          background: $secondary
+          bottom: -3rem
+          left: 50%
+          margin-left: -37.5%
 @media screen and ( max-width: 760px )
   .container
     width: 95%
@@ -237,9 +256,10 @@
       left: 50%
       margin-left: -45%
       margin-top: -12rem
-      padding: 0
+      padding-top: 2rem
       width: 90%
       height: 10rem
+      
     &__item
       &--title
         color: $primary
