@@ -1255,7 +1255,7 @@ footer {
   .modal__dialog {
     position: relative;
     max-width: 40rem;
-    background: #fff url("../img/bg-lines.svg") no-repeat center/cover;
+    background: #fff;
     box-shadow: 0 0 20px #939292;
     padding: 3rem;
     color: #2c2c2d; }
@@ -1360,6 +1360,8 @@ em {
     position: relative;
     max-width: 36.36rem;
     padding: 2.357rem 3.5rem 1.928rem;
+    background: #fff;
+    box-shadow: 0 0 20px #939292;
     color: #2c2c2d; }
   .modal__success__close {
     position: absolute;
@@ -1448,9 +1450,6 @@ em {
     color: #38393b; }
   .news__link:hover {
     color: #fff; }
-  .services__card:hover {
-    cursor: default;
-    border-bottom: none; }
   .feedback__container {
     width: 100%; }
   .nav {

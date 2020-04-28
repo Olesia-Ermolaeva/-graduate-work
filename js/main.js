@@ -39,6 +39,18 @@ $(document).ready(function () {
   }, 600);
   return false;
   });
+//смена цвета меню
+
+var scrolled;
+window.onscroll = function() {
+    scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    if(scrolled > 100){
+        $("header").css({"background": "white"})
+    }
+    if(100 > scrolled){
+        $("header").css({"background": "transparent"})         
+    }
+}
 
   //валидация формы модального окна
   $(".modal__form").validate({
